@@ -20,7 +20,7 @@ sudo apt-get install xfsprogs
 
 Require for bochs >= 2.6.7.
 
-If you install the bochs by ubuntu `apt-get`, it will be version 2.6.5 which will lead to some problems. See issue [here](https://github.com/SilverRainZ/OS67/issues/11). So we need to install it from source codes.
+If you install the bochs by ubuntu `apt-get`, it will be version 2.6.5 which will lead to some problems. See issue [here](https://github.com/SilverRainZ/OS67/issues/11).   
 
 Download source codes from [Bochs IA-32 Emulator Project](http://bochs.sourceforge.net/). In 2018.01.24, the latest version is 2.6.9.
 
@@ -28,7 +28,9 @@ Download source codes from [Bochs IA-32 Emulator Project](http://bochs.sourcefor
 sudo apt-get install build-essential xorg-dev fort77 libgtk2.0-dev libwxgtk3.0-dev
 tar vxzf bochs-2.6.9.tar.gz
 cd bochs-2.6.9
-./configure --enable-debugger --enable-disasm --with-x11 --with-wx --enable-debugger --enable-disasm --enable-all-optimizations --enable-readline --enable-long-phy-address --enable-debugger-gui
+./configure --enable-debugger --enable-disasm --with-x11 --with-wx \
+--enable-debugger --enable-disasm --enable-all-optimizations \
+--enable-readline --enable-long-phy-address --enable-debugger-gui
 make && make install
 ```
 
